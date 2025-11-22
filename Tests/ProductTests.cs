@@ -1,3 +1,4 @@
+using csharp_ecommerce_automation_framework.Utilities;
 using NUnit.Framework;
 using SauceDemoTests.Pages;
 using SauceDemoTests.Utilities;

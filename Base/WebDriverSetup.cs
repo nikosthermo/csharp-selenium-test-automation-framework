@@ -1,3 +1,5 @@
+// This class is now redundant due to improved TestBase. Recommend removing usages and deleting this file.
+
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 

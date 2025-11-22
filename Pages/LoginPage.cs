@@ -1,4 +1,6 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace SauceDemoTests.Pages
 {
@@ -13,7 +15,11 @@ namespace SauceDemoTests.Pages
 
         public void Login(string username, string password)
         {
+            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            wait.Until(d => UsernameField.Displayed && PasswordField.Displayed && LoginButton.Displayed);
+            UsernameField.Clear();
             UsernameField.SendKeys(username);
+            PasswordField.Clear();
             PasswordField.SendKeys(password);
             LoginButton.Click();
         }

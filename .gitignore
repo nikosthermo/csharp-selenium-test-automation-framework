@@ -1,3 +1,15 @@
 bin/
 obj/
-.idea
+.idea/
+TestResults/
+TestReports/
+*.user
+*.suo
+*.vs
+*.vscode/
+*.DS_Store
+*.log
+*.dll
+*.pdb
+*.cache
+*.json
